@@ -30,6 +30,8 @@ import AppointmentCalendar from '@screens/AppointmentCalendar';
 import CreateAppointment from '@screens/CreateAppointment';
 import AppointmentDetails from '@screens/AppointmentDetails';
 import FindDoctors from '@screens/FindDoctors';
+import TrainingDataset from '@screens/TrainingDataset';
+import TrainingDataset2 from '@screens/TrainingDataset2';
 import FindHospital from '@screens/FindHospital';
 import ResultFindDoctor from '@screens/ResultFindDoctor';
 import SvgMap from '@svgs/SvgMap';
@@ -408,6 +410,24 @@ const Main = memo(() => {
           component={FindDoctors}
           options={{
             headerTitle: () => <HeaderTitle title={'Find Doctors'} />,
+            headerLeft: () => <ButtonHeader />,
+            headerBackground: () => <HeaderBackGround />,
+          }}
+        />
+        <Stack.Screen
+          name={ROUTES.TrainingDataset}
+          component={TrainingDataset}
+          options={{
+            headerTitle: () => <HeaderTitle title={'Training Dataset'} />,
+            headerLeft: () => <ButtonHeader />,
+            headerBackground: () => <HeaderBackGround />,
+          }}
+        />
+        <Stack.Screen
+          name={ROUTES.TrainingDataset2}
+          component={TrainingDataset2}
+          options={{
+            headerTitle: () => <HeaderTitle title={'Training Dataset2'} />,
             headerLeft: () => <ButtonHeader />,
             headerBackground: () => <HeaderBackGround />,
           }}

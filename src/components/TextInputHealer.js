@@ -17,6 +17,7 @@ interface Props {
   returnKeyType?: any;
   onSubmitEditing?: any;
   onChangeText?: any;
+  keyboardType?: any;
   blurOnSubmit?: boolean;
 }
 
@@ -33,11 +34,12 @@ const TextInputHealer = (props: Props) => {
         placeholderTextColor={colors.dimGray}
         editable={props.editable}
         returnKeyType={props.returnKeyType}
+        keyboardType={props.keyboardType}
         onChangeText={(text) => {
           setChangeText(text);
           props.onChangeText && props.onChangeText(text);
         }}
-        value={changeText}
+        value={props.value}
         onSubmitEditing={props.onSubmitEditing}
         blurOnSubmit={props.blurOnSubmit}
       />

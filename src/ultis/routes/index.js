@@ -37,6 +37,8 @@ const ROUTES = {
   CreateAppointment: 'CreateAppointment',
   AppointmentDetails: 'AppointmentDetails',
   FindDoctors: 'FindDoctors',
+  TrainingDataset: 'Training Dataset',
+  TrainingDataset2: 'Training Dataset2',
   FindHospital: 'FindHospital',
   ResultFindDoctor: 'Result Find Doctor',
   StaticsHealth: 'StaticsHealth',

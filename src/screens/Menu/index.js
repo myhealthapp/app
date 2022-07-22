@@ -27,6 +27,7 @@ const SCREENS = [
   'Food Profile',
   'Food Details',
   'Finger',
+  'Training Dataset',
   'Log out',
 ];
 
@@ -83,6 +84,10 @@ const Menu = memo(({ route }) => {
       case 'Finger':
         navigation.navigate(ROUTES.Finger);
         setIndex(6);
+        break;
+      case 'Training Dataset':
+        navigation.navigate(ROUTES.TrainingDataset);
+        setIndex(7);
         break;
       case 'Log out':
         navigation.navigate(ROUTES.SignIn);
